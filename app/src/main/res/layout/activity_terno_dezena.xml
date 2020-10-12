@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo_activity"
+    tools:context=".TernoDezenaActivity">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/terno_dezena"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textPDezena"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/ic_texto_terno_circular"
+        android:paddingTop="10dp"
+        android:text="@string/terno_dez_sorteada"
+        android:textAlignment="center"
+        android:textColor="@color/texto_botao"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textSDezena"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/ic_texto_terno_circular"
+        android:paddingTop="10dp"
+        android:text="@string/terno_dez_sorteada"
+        android:textAlignment="center"
+        android:textColor="@color/texto_botao"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textTDezena"
+        app:layout_constraintStart_toEndOf="@+id/textPDezena"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textTDezena"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/ic_texto_terno_circular"
+        android:paddingTop="10dp"
+        android:text="@string/terno_dez_sorteada"
+        android:textAlignment="center"
+        android:textColor="@color/texto_botao"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <Button
+        android:id="@+id/btnPDezena"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/ic_botao_arredondado"
+        android:text="@string/btn_pterno_dezena"
+        android:textColor="@color/texto_botao"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPDezena" />
+
+    <Button
+        android:id="@+id/btnSDezena"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/ic_botao_arredondado"
+        android:text="@string/brn_sterno_dezena"
+        android:textColor="@color/texto_botao"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btnTDezena"
+        app:layout_constraintStart_toEndOf="@+id/btnPDezena"
+        app:layout_constraintTop_toBottomOf="@+id/textSDezena" />
+
+    <Button
+        android:id="@+id/btnTDezena"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/ic_botao_arredondado"
+        android:text="@string/btn_tterno_dezena"
+        android:textColor="@color/texto_botao"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTDezena" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imagePBicho"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_image_grupo_arredondado"
+        app:civ_border_color="@android:color/white"
+        app:civ_border_width="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPDezena" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageSBicho"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/ic_image_grupo_arredondado"
+        app:civ_border_color="@android:color/white"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageTBicho"
+        app:layout_constraintStart_toEndOf="@+id/imagePBicho"
+        app:layout_constraintTop_toBottomOf="@+id/btnSDezena" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageTBicho"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/ic_image_grupo_arredondado"
+        app:civ_border_color="@android:color/white"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTDezena" />
+
+    <TextView
+        android:id="@+id/nomePBicho"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:text=""
+        android:textStyle="bold|italic"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/imagePBicho"
+        app:layout_constraintStart_toStartOf="@+id/imagePBicho"
+        app:layout_constraintTop_toBottomOf="@+id/imagePBicho" />
+
+    <TextView
+        android:id="@+id/nomeSBicho"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:text=""
+        android:textStyle="bold|italic"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toStartOf="@+id/nomeTBicho"
+        app:layout_constraintStart_toEndOf="@+id/nomePBicho"
+        app:layout_constraintTop_toBottomOf="@+id/imageSBicho" />
+
+    <TextView
+        android:id="@+id/nomeTBicho"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:text=""
+        android:textStyle="bold|italic"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/imageTBicho"
+        app:layout_constraintTop_toBottomOf="@+id/imageTBicho" />
+
+    <TextView
+        android:id="@+id/textMensagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/nomeTBicho"
+        app:layout_constraintStart_toStartOf="@+id/nomePBicho"
+        app:layout_constraintTop_toBottomOf="@+id/nomeSBicho" />
+</androidx.constraintlayout.widget.ConstraintLayout>

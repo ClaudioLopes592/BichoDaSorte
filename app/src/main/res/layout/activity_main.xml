@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo_activity"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/titulo_main"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnGrupo"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/ic_botao_arredondado"
+        android:text="@string/btn_grupo"
+        android:textColor="@color/texto_botao"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btnDezena"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_botao_arredondado"
+        android:text="@string/btn_dezena"
+        android:textColor="@color/texto_botao"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnGrupo"
+        app:layout_constraintStart_toStartOf="@+id/btnGrupo"
+        app:layout_constraintTop_toBottomOf="@+id/btnGrupo" />
+
+    <Button
+        android:id="@+id/btnCentena"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_botao_arredondado"
+        android:text="@string/btn_centena"
+        android:textColor="@color/texto_botao"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnDezena"
+        app:layout_constraintStart_toStartOf="@+id/btnDezena"
+        app:layout_constraintTop_toBottomOf="@+id/btnDezena" />
+
+    <Button
+        android:id="@+id/btnMilhar"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_botao_arredondado"
+        android:text="@string/btn_milhar"
+        android:textSize="16sp"
+        android:textColor="@color/texto_botao"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnCentena"
+        app:layout_constraintStart_toStartOf="@+id/btnCentena"
+        app:layout_constraintTop_toBottomOf="@+id/btnCentena" />
+
+    <Button
+        android:id="@+id/btnDuqueGrupo"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_botao_arredondado"
+        android:text="@string/btn_duqueGrupo"
+        android:textStyle="bold"
+        android:textColor="@color/texto_botao"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnMilhar"
+        app:layout_constraintStart_toStartOf="@+id/btnMilhar"
+        app:layout_constraintTop_toBottomOf="@+id/btnMilhar" />
+
+    <Button
+        android:id="@+id/btnDuqueDezena"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_botao_arredondado"
+        android:text="@string/btn_duqueDezena"
+        android:textSize="16sp"
+        android:textColor="@color/texto_botao"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnDuqueGrupo"
+        app:layout_constraintStart_toStartOf="@+id/btnDuqueGrupo"
+        app:layout_constraintTop_toBottomOf="@+id/btnDuqueGrupo" />
+
+    <Button
+        android:id="@+id/btnTernoGrupo"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_botao_arredondado"
+        android:text="@string/btn_ternoGrupo"
+        android:textStyle="bold"
+        android:textColor="@color/texto_botao"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnDuqueDezena"
+        app:layout_constraintStart_toStartOf="@+id/btnDuqueDezena"
+        app:layout_constraintTop_toBottomOf="@+id/btnDuqueDezena" />
+
+    <Button
+        android:id="@+id/btnTernoDezena"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_botao_arredondado"
+        android:text="@string/btn_ternoDezena"
+        android:textSize="16sp"
+        android:textColor="@color/texto_botao"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnTernoGrupo"
+        app:layout_constraintStart_toStartOf="@+id/btnTernoGrupo"
+        app:layout_constraintTop_toBottomOf="@+id/btnTernoGrupo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

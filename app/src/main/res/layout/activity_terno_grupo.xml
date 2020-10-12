@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/fundo_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TernoGrupoActivity">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:text="@string/titulo_terno_grupo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textPGrupo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/ic_texto_terno_circular"
+        android:paddingTop="10dp"
+        android:text="@string/grupo_sorteado"
+        android:textAlignment="center"
+        android:textColor="@color/texto_botao"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textSGrupo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/ic_texto_terno_circular"
+        android:paddingTop="10dp"
+        android:text="@string/grupo_sorteado"
+        android:textAlignment="center"
+        android:textColor="@color/texto_botao"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textTGrupo"
+        app:layout_constraintStart_toEndOf="@+id/textPGrupo"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textTGrupo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/ic_texto_terno_circular"
+        android:paddingTop="10dp"
+        android:text="@string/grupo_sorteado"
+        android:textAlignment="center"
+        android:textColor="@color/texto_botao"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <Button
+        android:id="@+id/btnPGrupo"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/ic_botao_arredondado"
+        android:text="@string/btn_p_grupo"
+        android:textColor="@color/texto_botao"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textPGrupo"
+        app:layout_constraintStart_toStartOf="@+id/textPGrupo"
+        app:layout_constraintTop_toBottomOf="@+id/textPGrupo" />
+
+    <Button
+        android:id="@+id/btnSGrupo"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/ic_botao_arredondado"
+        android:text="@string/btn_s_grupo"
+        android:textColor="@color/texto_botao"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btnTGrupo"
+        app:layout_constraintStart_toEndOf="@+id/btnPGrupo"
+        app:layout_constraintTop_toBottomOf="@+id/textSGrupo" />
+
+    <Button
+        android:id="@+id/btnTGrupo"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/ic_botao_arredondado"
+        android:text="@string/btn_t_grupo"
+        android:textColor="@color/texto_botao"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textTGrupo"
+        app:layout_constraintTop_toBottomOf="@+id/textTGrupo" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imagePBicho"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/ic_image_grupo_arredondado"
+        app:civ_border_color="@android:color/white"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnPGrupo"
+        app:layout_constraintStart_toStartOf="@+id/btnPGrupo"
+        app:layout_constraintTop_toBottomOf="@+id/btnPGrupo" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageSBicho"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/ic_image_grupo_arredondado"
+        app:civ_border_color="@android:color/white"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageTBicho"
+        app:layout_constraintStart_toEndOf="@+id/imagePBicho"
+        app:layout_constraintTop_toBottomOf="@+id/btnSGrupo" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageTBicho"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/ic_image_grupo_arredondado"
+        app:civ_border_color="@android:color/white"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnTGrupo"
+        app:layout_constraintTop_toBottomOf="@+id/btnTGrupo" />
+
+    <TextView
+        android:id="@+id/textNomePBicho"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/imagePBicho"
+        app:layout_constraintStart_toStartOf="@+id/imagePBicho"
+        app:layout_constraintTop_toBottomOf="@+id/imagePBicho" />
+
+    <TextView
+        android:id="@+id/textNomeSBicho"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/imageSBicho"
+        app:layout_constraintStart_toStartOf="@+id/imageSBicho"
+        app:layout_constraintTop_toBottomOf="@+id/imageSBicho" />
+
+    <TextView
+        android:id="@+id/textNomeTBicho"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/imageTBicho"
+        app:layout_constraintStart_toStartOf="@+id/imageTBicho"
+        app:layout_constraintTop_toBottomOf="@+id/imageTBicho" />
+
+    <TextView
+        android:id="@+id/textMensagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textNomeTBicho"
+        app:layout_constraintStart_toStartOf="@+id/textNomePBicho"
+        app:layout_constraintTop_toBottomOf="@+id/textNomeSBicho" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

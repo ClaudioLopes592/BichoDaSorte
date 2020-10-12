@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo_activity"
+    tools:context=".DuqueGrupoActivity">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:text="@string/titulo_duque_grupo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textPGSorteado"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_texto_circular"
+        android:paddingTop="25dp"
+        android:text="@string/prim_grupo"
+        android:textAlignment="center"
+        android:textColor="@color/texto_botao"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textSGSorteado"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/ic_texto_circular"
+        android:paddingTop="25dp"
+        android:text="@string/seg_grupo"
+        android:textAlignment="center"
+        android:textColor="@color/texto_botao"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <Button
+        android:id="@+id/btnPGSorteado"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_botao_arredondado"
+        android:text="@string/btn_prim_sorteio"
+        android:textColor="@color/texto_botao"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textPGSorteado"
+        app:layout_constraintStart_toStartOf="@+id/textPGSorteado"
+        app:layout_constraintTop_toBottomOf="@+id/textPGSorteado" />
+
+    <Button
+        android:id="@+id/btnSGSorteado"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_botao_arredondado"
+        android:text="@string/btn_seg_sorteio"
+        android:textColor="@color/texto_botao"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/textSGSorteado"
+        app:layout_constraintStart_toStartOf="@+id/textSGSorteado"
+        app:layout_constraintTop_toBottomOf="@+id/textSGSorteado" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imagePGSorteado"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        app:civ_border_color="@android:color/white"
+        app:civ_border_width="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageSGSorteado"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:civ_border_color="@android:color/white"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textPGrupoSorteado"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text=""
+        android:textStyle="bold|italic"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/imagePGSorteado"
+        app:layout_constraintStart_toStartOf="@+id/imagePGSorteado"
+        app:layout_constraintTop_toBottomOf="@+id/imagePGSorteado" />
+
+    <TextView
+        android:id="@+id/textSGrupoSorteado"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text=""
+        android:textStyle="bold|italic"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageSGSorteado"
+        app:layout_constraintStart_toStartOf="@+id/imageSGSorteado"
+        app:layout_constraintTop_toBottomOf="@+id/imageSGSorteado" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/seu_palpite_para_hoje"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/btnSGSorteado"
+        app:layout_constraintStart_toStartOf="@+id/btnPGSorteado"
+        app:layout_constraintTop_toBottomOf="@+id/btnPGSorteado" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/msg_boa_sorte"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textSGrupoSorteado"
+        app:layout_constraintStart_toStartOf="@+id/textPGrupoSorteado"
+        app:layout_constraintTop_toBottomOf="@+id/textSGrupoSorteado" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
